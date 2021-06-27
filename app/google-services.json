@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222517487397",
+    "project_id": "happier-you",
+    "storage_bucket": "happier-you.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222517487397:android:7901491824fcbe5a445ccc",
+        "android_client_info": {
+          "package_name": "com.example.happieryou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222517487397-8sp496buds1prbmt414big3rni4s2nlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkxEIqweenlA1xnUAwx-R-Be06nGIeR7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222517487397-8sp496buds1prbmt414big3rni4s2nlg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
