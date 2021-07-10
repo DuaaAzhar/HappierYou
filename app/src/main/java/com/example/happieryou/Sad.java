@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Sad extends AppCompatActivity {
-ImageView ivArticles, ivEx_Sad;
+ImageView ivArticles, ivEx_Sad, ivMusic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +28,17 @@ ImageView ivArticles, ivEx_Sad;
                 startActivity(intent);
             }
         });
-
+        ivMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(com.example.happieryou.Sad.this, SadMusic.class);
+                startActivity(intent);
+            }
+        });
     }
     public void init(){
         ivArticles=findViewById(R.id.ivArticles);
         ivEx_Sad=findViewById(R.id.ivEx_Sad);
+        ivMusic=findViewById(R.id.ivMusic);
     }
 }

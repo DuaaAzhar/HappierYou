@@ -2,30 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.happieryou">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:minSdkVersion="16"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:targetSdkVersion="26"
         android:theme="@style/Theme.HappierYou">
-        <activity android:name=".Exercise_Sad"></activity>
-        <activity android:name=".Articles" />
-        <activity android:name=".DuaasAnger" />
-        <activity android:name=".YogaAnger" />
-        <activity android:name=".Sad" />
-        <activity android:name=".Anger" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".SadMusic" />
+        <activity android:name=".AngerMusic"></activity>
+        <activity android:name=".AnimalActivity" />
+        <activity android:name=".RainActivity" />
+        <activity
+            android:name=".Sleepy"
+            android:label="@string/title_activity_sleepy"
+            android:theme="@style/Theme.HappierYou.NoActionBar" />
+        <activity android:name=".Exercise_Sad" />
+        <activity android:name=".Articles" />
+        <activity android:name=".DuaasAnger" />
+        <activity android:name=".YogaAnger" />
+        <activity android:name=".Sad" />
+        <activity android:name=".Anger" />
+        <activity android:name=".MainActivity">
+        </activity> <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
         <meta-data
-            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-            android:value="face" />
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~6300978111" />
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Anger extends AppCompatActivity {
-    ImageView ivYoga,ivDuaa;
+    ImageView ivYoga,ivDuaa, ivMusic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,9 +28,17 @@ public class Anger extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ivMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(com.example.happieryou.Anger.this, AngerMusic.class);
+                startActivity(intent);
+            }
+        });
     }
     public void init(){
         ivYoga=findViewById(R.id.ivYoga);
         ivDuaa=findViewById(R.id.ivDuaa);
+        ivMusic=findViewById(R.id.ivMusic);
     }
 }
